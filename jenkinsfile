@@ -9,7 +9,7 @@ node{
     become: false, 
     playbook: 'install.yaml',
     inventory: 'hosts.yaml',
-    credentialsId: 'ansible_user_host',
+    credentialsId: "${ssh_key}",
     disableHostKeyChecking: true
     )
   }
