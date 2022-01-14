@@ -1,0 +1,13 @@
+node{
+ stage('Clone') {
+ git 'https://github.com/LM-Jenkins/app-salaire.git'
+ }
+ stage('Ansible') {
+ ansiblePlaybook (
+ colorized: true, 
+ become: true, 
+ playbook: 'install.yaml',
+ inventory: 'hosts.yaml'
+ )
+ }
+}
