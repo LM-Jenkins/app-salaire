@@ -8,7 +8,7 @@ node{
     become: true, 
     playbook: 'install.yaml',
     inventory: 'hosts.yaml',
-    credentialsId: 'ssh_key',
+    credentialsId: 'fa847de9-9d9e-49b2-bee5-f88f17260161',
     disableHostKeyChecking: true
     )
   }
