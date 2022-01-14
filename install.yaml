@@ -43,7 +43,7 @@
 
   - name: copier le rep app dans /var/www/html/
     copy:
-     src: app/
+     src: files/
      dest: /var/www/html/
 
   - name: ajout du fichier de php de la configuraion d'acces a la db
