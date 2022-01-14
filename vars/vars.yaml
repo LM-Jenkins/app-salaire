@@ -14,13 +14,13 @@ mysql_password:
   - ""
 
 db_host:
-  - 192.168.226.132
+  - 192.168.226.133
 
 
 mysql_user: "lmdeschamps"
 mysql_password: ""
 mysql_dbname: "dblouismathisform"
-db_host: "192.168.226.132"
-webserver_host: "192.168.226.132"
+db_host: "192.168.226.133"
+webserver_host: "192.168.226.133"
 root_mariadb_password: ""
 
