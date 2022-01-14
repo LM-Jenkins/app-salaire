@@ -1,13 +1,15 @@
 node{
  stage('Clone') {
- git 'https://github.com/LM-Jenkins/app-salaire.git'
+   git 'https://github.com/LM-Jenkins/app-salaire.git'
  }
  stage('Ansible') {
- ansiblePlaybook (
- colorized: true, 
- become: true, 
- playbook: 'install.yaml',
- inventory: 'hosts.yaml'
- )
+  withCredentials([sshUserPrivateKey(credentialsId: '66437fe8-6f21-4393-89b2-ae0fcaf9f6c2',keyFileVariable: 'ssh_key')]) {
+    ansiblePlaybook (
+    colorized: true, 
+    become: true, 
+    playbook: 'install.yaml',
+    inventory: 'hosts.yaml'
+    )
+  }
  }
 }
