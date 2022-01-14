@@ -1,0 +1,26 @@
+pkg:
+  - vim
+  - php
+  - php-mysql
+  - httpd
+
+mysql_dbname:
+  - dblouismathisform
+
+mysql_user:
+  - lmdeschamps
+
+mysql_password: 
+  - ""
+
+db_host:
+  - 192.168.226.132
+
+
+mysql_user: "lmdeschamps"
+mysql_password: ""
+mysql_dbname: "dblouismathisform"
+db_host: "192.168.226.132"
+webserver_host: "192.168.226.132"
+root_mariadb_password: ""
+
