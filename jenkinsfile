@@ -9,7 +9,7 @@ node{
     become: false, 
     playbook: 'install.yaml',
     inventory: 'hosts.yaml',
-    credentialsId: "${ssh_key}",
+    credentialsId: "$ssh_key",
     disableHostKeyChecking: true
     )
   }
