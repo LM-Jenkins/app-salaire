@@ -1,0 +1,4 @@
+webservers:
+  hosts: 192.168.226.133
+db: 
+  hosts: 192.168.226.133
