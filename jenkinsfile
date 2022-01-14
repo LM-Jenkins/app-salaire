@@ -6,7 +6,7 @@ node{
   withCredentials([sshUserPrivateKey(credentialsId: '66437fe8-6f21-4393-89b2-ae0fcaf9f6c2',keyFileVariable: 'ssh_key')]) {
     ansiblePlaybook (
     colorized: true, 
-    become: true, 
+    become: false, 
     playbook: 'install.yaml',
     inventory: 'hosts.yaml',
     credentialsId: "${ssh_key}",
