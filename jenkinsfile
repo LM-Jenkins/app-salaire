@@ -5,7 +5,7 @@ node{
  stage('Ansible') {
     ansiblePlaybook (
     colorized: true, 
-    become: false, 
+    become: true, 
     playbook: 'install.yaml',
     inventory: 'hosts.yaml',
     credentialsId: 'ssh_key',
